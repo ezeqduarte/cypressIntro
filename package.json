@@ -1,0 +1,18 @@
+{
+  "name": "cypressintro",
+  "version": "1.0.0",
+  "description": "Curso de Cypress udemy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@ezeqduarte:ezeqduarte/cypressIntro.git"
+  },
+  "author": "Ezequiel Duarte",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.17.4"
+  }
+}
