@@ -13,6 +13,7 @@
   "author": "Ezequiel Duarte",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^12.17.4"
+    "cypress": "^12.17.4",
+    "cypress-plugin-tab": "^1.0.5"
   }
 }
