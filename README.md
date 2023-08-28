@@ -15,3 +15,4 @@ Introduccion a Cypress. Test funcional
 
 1- npm install
 2- npx cypress open
+
