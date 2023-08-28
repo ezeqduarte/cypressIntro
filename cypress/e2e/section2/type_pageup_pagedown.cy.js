@@ -1,22 +1,34 @@
+//para que funcionen los comandos en cypress
 /// <reference types="cypress"/>
 
-describe("Type pageUp ", () => {
-
-    it("Test using pageDown", () => {
-        cy.visit("https://ezequiel-duarte.vercel.app/")
-        //siempre el should con comillas simples y luego dobles
-        cy.title().should('eq', "Portfolio | Ezequiel duarte")
+describe("Seccion 2 Functions para type enter", () => {
+    it("Type 1", () => {
+        cy.visit("https://www.google.com.ar/")
+        cy.title().should('eq', "Google")
+        cy.log('La funcion title funciono correctamente')
+        cy.get("#APjFqb").type("cypress io")
+        cy.log('El tipeo funciono correctamente')
         cy.wait(1500)
-        cy.get("#Inicio > div > div.last-div-home > a").type("{pagedown}")
       })
 
-      it("Test using pageup", () => {
-        cy.visit("https://ezequiel-duarte.vercel.app/")
-        //siempre el should con comillas simples y luego dobles
-        cy.title().should('eq', "Portfolio | Ezequiel duarte")
+      it.only("Type 2: only this test", () => {
+        cy.visit("https://www.google.com.ar/")
+        cy.title().should('eq', "Google")
+        cy.log('La funcion title funciono correctamente')
+        cy.get("#APjFqb").type("river plate")
+        cy.log('El tipeo funciono correctamente')
         cy.wait(1500)
-        cy.get("#Inicio > div > div.last-div-home > a").type("{pageup}")
       })
-     
+
+      it("Type 3", () => {
+        cy.visit("https://www.google.com.ar/")
+        cy.title().should('eq', "Google")
+        cy.log('La funcion title funciono correctamente')
+        cy.get("#APjFqb").type("la scaloneta")
+        cy.log('El tipeo funciono correctamente')
+        cy.wait(1500)
+      })
   })
+
+  
   
