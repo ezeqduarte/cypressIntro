@@ -16,7 +16,7 @@ describe("Asserts", () => {
       
       it.only("Asserts: validando estado nuevo", () => {
         cy.visit("https://www.mercadolibre.com.ar/mando-inalambrico-para-consola-de-juegos-color-negro-compatible-con-ps4/p/MLA21212921#reco_item_pos=0&reco_backend=machinalis-homes-pdp-boos&reco_backend_type=function&reco_client=home_navigation-recommendations&reco_id=6e5a9fb0-5bba-4362-b624-44c296e7f490");
-        cy.get(".Wt5Tfe").find("[jsname='yEVEwb']").eq(0).click()
+        cy.xpath("//*[@id='buybox-form']/div[2]/div/div/div/div/div/div/a").contains("span").contains('SOMOSTEC.ARG')
       })
       
 
